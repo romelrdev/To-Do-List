@@ -1,0 +1,152 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: rgba(245,162,38,0.5);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container{
+  width:80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(241,241,241);
+  border-radius: 50%;
+  padding: 30px 20px;
+
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+.list{
+  list-style: none;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.list li{
+  padding: 5px 0;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+header h1{
+  display:inline;
+  font-size: 3rem;
+  font-family: verdana, arial;
+  font-weight: 400;
+  word-spacing: -1.3rem;
+}
+
+header h1 span{
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+header img{
+display:inline;
+max-width: 50px;
+max-height: 50px;
+margin-right: 10px;
+}
+
+header input{
+  margin: 0 auto;
+  display: block;
+  padding: 10px 5px;
+  border: none;
+  width: 25%;
+  text-align: center;
+}
+
+header input:focus{
+  outline: none;
+  text-align: center;
+}
+
+header input::placeholder{
+  text-align: center;
+}
+
+header input:focus::placeholder{
+  color: transparent;
+}
+
+header button{
+  margin: 0 auto;
+  display:block;
+  margin-top: 10px;
+}
+
+header button:hover{
+  cursor: pointer;
+}
+
+footer p{
+  font-size: 1.2rem;
+  letter-spacing: .4rem;
+
+  display:flex;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+footer button:hover{
+  cursor: pointer;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
